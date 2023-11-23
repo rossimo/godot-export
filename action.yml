@@ -1,6 +1,6 @@
-name: 'Godot Export'
+name: 'Godot Export Workaround'
 description: 'Automatically exports your Godot games.'
-author: 'Firebelley'
+author: 'Rossimo'
 branding:
   icon: 'box'
   color: 'white'
