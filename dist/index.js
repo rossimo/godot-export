@@ -59808,7 +59808,7 @@ async function addEditorSettings() {
 /** Open the editor in headless mode once, to import all assets, creating the `.godot` directory if it doesn't exist. */
 async function importProject() {
     core.startGroup('🎲 Import project');
-    await (0,exec.exec)(godotExecutablePath, [GODOT_PROJECT_FILE_PATH, '--headless', '-e', '--quit']);
+    await (0,exec.exec)(godotExecutablePath, [GODOT_PROJECT_FILE_PATH, '--headless', '-e', '--quit'], { ignoreReturnCode: true });
     core.endGroup();
 }
 
