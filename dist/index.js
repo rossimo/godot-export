@@ -59809,6 +59809,7 @@ async function addEditorSettings() {
 async function importProject() {
     core.startGroup('🎲 Import project');
     await (0,exec.exec)(godotExecutablePath, [GODOT_PROJECT_FILE_PATH, '--headless', '-e', '--quit'], { ignoreReturnCode: true });
+    await (0,exec.exec)(godotExecutablePath, [GODOT_PROJECT_FILE_PATH, '--headless', '-e', '--quit']);
     core.endGroup();
 }
 
